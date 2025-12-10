@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntegroClean - Home</title>
+    <style>
+        /* ---------------- Body & Flex Setup ---------------- */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            background: #0d1f33; /* deep navy blue background */
+            color: #fff; /* default text color */
+        }
+
+        /* ---------------- Header Styling ---------------- */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 20px 40px;
+            background: #111; /* dark header */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+        }
+
+        /* Logo styling */
+        .logo {
+            width: 200px; /* slightly bigger logo */
+            max-width: 100%;
+        }
+
+        /* Header text next to logo */
+        .header-text {
+            flex: 1;
+            text-align: left;
+            margin-left: 20px;
+        }
+
+        .header-text h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #2a87c8; /* light blue */
+        }
+
+        .header-text p {
+            margin: 5px 0 0;
+            font-size: 16px;
+            color: #7fb3e6; /* lighter blue for tagline */
+        }
+
+        /* ---------------- Navigation Styling ---------------- */
+        nav {
+            background: #111;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #2a87c8; /* light blue links */
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #fff; /* hover effect */
+        }
+
+        /* ---------------- Main Content Styling ---------------- */
+        .content {
+            text-align: center;
+            padding: 60px 20px;
+            font-size: 20px;
+            flex: 1; /* pushes footer down */
+        }
+
+        /* Welcome message styling */
+        .content h2 {
+            color: #ffcc00; /* yellow welcome message */
+        }
+
+        /* Cleaning image styling */
+        .content img {
+            margin-top: 30px;
+            max-width: 600px; /* limit image width */
+            width: 100%;
+            height: auto; /* maintain aspect ratio */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        /* ---------------- Footer Styling ---------------- */
+        footer {
+            background: #fff; /* white footer */
+            text-align: center;
+            padding: 18px;
+            color: #111; /* dark text */
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+        }
+
+        /* ---------------- Responsive Styling ---------------- */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .header-text {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ---------------- Header with Logo and Company Info ---------------- -->
+    <header>
+        <img src="images/logo.jpg" class="logo" alt="IntegroClean Logo">
+        <div class="header-text">
+            <h1>IntegroClean</h1>
+            <p>Strategic Solutions. Sustainable Results.</p>
+        </div>
+    </header>
+
+    <!-- ---------------- Navigation Menu ---------------- -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <!-- ---------------- Main Content ---------------- -->
+    <div class="content">
+        <!-- Welcome message in yellow -->
+        <h2>Welcome to IntegroClean</h2>
+        <h2>Your trusted partner in professional cleaning solutions.<h2>
+        <!-- Cleaning service image -->
+        <img src="images/Cleaning.jpg" alt="Cleaning Service Image">
+    </div>
+
+    <!-- ---------------- Footer ---------------- -->
+    <footer>
+        © 2025 IntegroClean | All Rights Reserved
+    </footer>
+
+</body>
+</html>
